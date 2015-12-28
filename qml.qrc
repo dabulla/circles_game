@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>LevelPlayer.qml</file>
+        <file>GameEntity.qml</file>
+        <file>Game.qml</file>
+        <file>CircleComponent.qml</file>
+        <file>ThrustingComponent.qml</file>
+        <file>MovingComponent.qml</file>
+        <file>Food.qml</file>
+    </qresource>
+</RCC>

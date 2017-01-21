@@ -9,6 +9,7 @@ GameEntity {
     property ThrustingComponent thrust: thrustComp
     property alias childrenContainer: circles // used to create children procedural (first arg of createObject does not recognize default-property for children)
     default property alias containedChildren: circles.children
+    property bool isBig: false
     width: moving.radius*2
     height: width
     CircleComponent {
@@ -62,7 +63,10 @@ GameEntity {
             }
             if( playersize === maxEnemySize) {
                 game.win = true;
-                console.log("won!");
+                isBig = true;
+                //console.log("won!");
+                //TODO: isBig in this level, is immune to this level as enemy.
+                //root.currentPlayer.parent = game.appendParentLevel();
             }
 
             if( circles.connections.length === 0) return;

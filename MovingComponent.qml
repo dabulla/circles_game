@@ -67,6 +67,10 @@ Item {
         var dy = ch.centerY//-lvlRad;
         var len = Math.sqrt(dx*dx + dy*dy);
         if( len > lvlRad-ch.circle.radius ) {
+//            if(root.parent.isControlled === true && root.parent.isBig) {
+
+//            }
+
             if(dx > 0.0 && velocityX > 0.0 ||
                dx < 0.0 && velocityX < 0.0 ||
                dy > 0.0 && velocityY > 0.0 ||
